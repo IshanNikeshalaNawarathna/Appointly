@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#1ab3c5</color>
+    <color name="lightBlue">#F0F3FA</color>
+    <color name="skyBlue">#5996ef</color>
+    <color name="lightBlueBtn">#ecf9ff</color>
+    <color name="blueBtn">#1499d0</color>
+    <color name="lightOrangeBtn">#fff7ed</color>
+    <color name="orangeBtn">#dd743c</color>
+    <color name="lightPurpleBtn">#edeeff</color>
+    <color name="purpleBtn">#6735a4</color>
+    <color name="blueCart">#1e73c5</color>
+    <color name="brown">#f0d9c1</color>
+    <color name="lightGray">#ecedef</color>
+</resources>
