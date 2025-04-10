@@ -48,7 +48,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
         };
 
         int backgroundRes = background[position % 4];
-        holder.binding.getRoot().setBackgroundColor(backgroundRes);
+        holder.binding.getRoot().setBackgroundResource(backgroundRes);
 
     }
 
