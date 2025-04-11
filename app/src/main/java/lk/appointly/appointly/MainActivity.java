@@ -8,8 +8,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import lk.appointly.appointly.adapter.CategoryAdapter;
+import lk.appointly.appointly.adapter.TopDoctorsAdapter;
 import lk.appointly.appointly.databinding.ActivityMainBinding;
 import lk.appointly.appointly.mainViewModel.MainViewModel;
+import lk.appointly.appointly.model.DoctorModel;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,7 +28,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         initCategory();
+        initDoctor();
 
+    }
+
+    private void initDoctor() {
+        binding.progressBarDoctor.setVisibility(View.VISIBLE);
+        model.loadDoctorModel().observe(this,doctorModels -> {
+            binding.doctorView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false));
+            binding.doctorView.setAdapter(new TopDoctorsAdapter(doctorModels));
+            binding.progressBarDoctor.setVisibility(View.GONE);
+        });
     }
 
     private void initCategory() {
