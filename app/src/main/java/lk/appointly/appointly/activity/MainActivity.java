@@ -1,4 +1,4 @@
-package lk.appointly.appointly;
+package lk.appointly.appointly.activity;
 
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +11,6 @@ import lk.appointly.appointly.adapter.CategoryAdapter;
 import lk.appointly.appointly.adapter.TopDoctorsAdapter;
 import lk.appointly.appointly.databinding.ActivityMainBinding;
 import lk.appointly.appointly.mainViewModel.MainViewModel;
-import lk.appointly.appointly.model.DoctorModel;
 
 public class MainActivity extends AppCompatActivity {
 
